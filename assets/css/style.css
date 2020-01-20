@@ -1,0 +1,57 @@
+:root {
+ --main: #F35324;
+ --main-alt: #FFFFFF;
+ --alternative: #858585;
+ --notification: #F9B32F;
+ --menu: #F3F3F3;
+ --menu-alt: #B9BDC6;
+ --bg: #F6F7FB;
+ --ok: #30CDA2;
+ --danger: #A5525C;
+ --info: #6298f0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.main-color {
+  color: var(--main);
+}
+
+.ok-color {
+  color: var(--ok);
+}
+
+.danger-color {
+  color: var(--danger);
+}
+
+.info-color {
+  color: var(--info);
+}
+
+@font-face {
+  src: url(../font/Exo2-Regular.ttf);
+  font-family: 'Exo2';
+  font-weight: normal;
+}
+.font-main {
+  font-family: 'Exo2', sans-serif;
+}

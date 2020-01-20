@@ -1,0 +1,121 @@
+.form.form--grid {
+  display: grid;
+  gap: 1em;
+}
+
+.form .form__group {
+  margin-bottom: 10px;
+}
+
+.form .form__group.form__group--checkbox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form .form__input {
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, .1875);
+  font-family: inherit;
+  padding: .75em 1em;
+  width: 100%;
+}
+
+.form select.form__input {
+  background-color: #FFF;
+}
+
+.form .form__custom-select {
+  position: relative;
+}
+
+.form .form__custom-select select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.form .form__custom-select select {
+  background: #fff url(../../img/icon-select.png) no-repeat right 10px center;
+}
+.form .form__custom-select.form__custom-select--main select {
+  background-image: url(../../img/icon-select-main.png);
+}
+
+.form .form__custom-select.form__custom-select--date select {
+  padding: .75em 3em;
+}
+.form .form__custom-select.form__custom-select--date::before {
+  content: "\FDFB";
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form .form__label {
+  font-size: 14px;
+}
+.form .form__label a {
+  color: inherit;
+}
+
+.form .form__btn {
+  align-items: center;
+  background-color: var(--main);
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0px 1px 5px rgba(0,0,0, .2);
+  color: var(--main-alt);
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-weight: bold;
+  justify-content: center;
+  padding: .75em 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form .form__btn.form__btn--small {
+  font-weight: normal;
+  padding: .5em 1em;
+  text-transform: capitalize;
+}
+
+.form .form__btn .form__btn__icon {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.form .form__btn.form__btn--gradient {
+  background-image: linear-gradient(to bottom, #FFE506 -40%, transparent 60%);
+  box-shadow: -2px 2px 7px rgba(0,0,0, .5);
+  margin: 0px auto;
+  margin-bottom: 2em;
+}
+
+.form .form__btn.form__btn--gradient:hover,
+.form .form__btn.form__btn--gradient:focus {
+  background-image: linear-gradient(to bottom, #FFE506 -40%, rgba(0,0,0, .075) 60%);
+}
+
+.form  .form__btn.form__btn--gradient .form__btn__icon {
+  color: #FFE506;
+}
+
+.form .form__btn.form__btn--flat {
+  margin: 1em auto;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+

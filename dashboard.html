@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Backoffice - Dashboard</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/block/form.css">
+	<link rel="stylesheet" href="./assets/css/block/money.css">
+  
+  <link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/aside.css">
+  <link rel="stylesheet" href="./assets/css/interface.css">
+  <link rel="stylesheet" href="./assets/css/block/container.css">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
+  
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+</head>
+<body class="font-main">
+  <header class="header">
+		<div class="show-link">
+			<form class="show-link__form form">
+				<input type="text" class="form__input show-link__input" placeholder="Mostrar meu link...">
+				<span class="mdi mdi-eye-outline show-link__icon show-link__icon--eye"></span>
+			</form>
+			<span class="mdi mdi-file-document-outline show-link__icon--arquivo"></span>
+		</div>
+		
+		<div class="user-content">
+			<span class="user-content__greetings">Olá, <span class="user-content__name">Gustavo Freire</span></span>
+			<span class="user-content__icon mdi mdi-chevron-down"></span>
+			<img src="./assets/img/user.png" alt="Foto do usuário Gustavo Freire" class="user-content__avatar" />
+
+			<div class="user-content__buttons">
+				<span class="user-content__btn mdi mdi-bell user-content__btn--notifications">
+					<span class="user-content__notifications">2</span>
+				</span>
+				<span class="user-content__btn mdi mdi-email"></span>
+				<span class="user-content__btn mdi mdi-dock-window"></span>
+			</div>
+
+			<span class="user-content__btn mdi mdi-menu" onclick="menuToggle()"></span>
+		</div>
+	</header>
+
+	<div class="content">
+		<aside class="aside">
+			<ul class="side-menu ">
+				<li class="side-menu__item side-menu__item--selected">
+          <a href="./dashboard.html">
+            <span class="item__text">Dashboard</span>
+            <span class="item__icon item__icon--home"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./equipe.html">
+            <span class="item__text">Equipe</span>
+            <span class="item__icon item__icon--globe"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./wallet.html">
+            <span class="item__text">Wallet</span>
+            <span class="item__icon item__icon--credit-card"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./comprar.html">
+            <span class="item__text">Comprar</span>
+            <span class="item__icon item__icon--emblem"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./bonus.html">
+            <span class="item__text">Bonus</span>
+            <span class="item__icon item__icon--medal"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./minha-conta.html">
+            <span class="item__text">Minha Conta</span>
+            <span class="item__icon item__icon--script"></span>
+          </a>
+			</li>
+			</ul>
+		</aside>
+	
+		<main class="main">
+      <h2 class="main__title">dash<span class="bold">board</span></h2>
+			
+			<div class="container dashboard">
+				<div class="container__item">
+					<div class="container__header">
+						<div>
+							<h3 class="container__title">Resumo</h3>
+							<span class="container__subtitle">Exibir</span>
+						</div>
+
+						<form class="form">
+							<div class="form__custom-select form__custom-select--date">
+								<select class="form__input">
+									<option>01.Jan.2019</option>
+								</select>
+							</div>
+							<div class="form__custom-select form__custom-select--date">
+								<select class="form__input">
+									<option>01.Dez.2019</option>
+								</select>
+							</div>
+							<div class="form__custom-select">
+								<select class="form__input">
+									<option>Conta Principal (00623xxxxxx418)</option>
+								</select>
+							</div>
+						</form>
+					</div>
+
+					<div class="container__body">
+						<img src="./assets/img/graph.png" alt="Replace with real graph" style="width: 100%;" />
+					</div>
+				</div>
+
+				<div class="container__item">
+					<div class="container__header">
+						<div>
+							<h3 class="container__title">Saldo</h3>
+							<span class="container__subtitle">Exibir</span>
+						</div>
+					</div>
+					<div class="container__body">
+						<div class="balance">
+							<div class="dashboard__row">
+								<h4 class="balance__value money">1,584</h4>
+								<div class="balance__increase">
+									<span class="balance__increase__icon mdi mdi-arrow-up"></span>
+									<span class="balance__increase__value">301%</span>
+								</div>
+							</div>
+
+							<hr class="balance__separator" />
+
+							<div class="balance__datatable">
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Extrato</span>
+									<span class="">Ver Mais</span>
+								</div>
+	
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Entradas</span>
+									<span class=""><span class="mdi mdi-arrow-up ok"></span>$1,584</span>
+								</div>
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Saídas</span>
+									<span class=""><span class="mdi mdi-arrow-down danger"></span>$0,0</span>
+								</div>
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Saldo total</span>
+									<span class="ok">$1,584</span>
+								</div>
+							</div>
+
+							<div class="balance__datatable">
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Ultimas Entradas</span>
+									<span class="">Ver Mais</span>
+								</div>
+	
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Bonus 1</span>
+									<span class=""><span class="mdi mdi-arrow-up ok"></span>$330</span>
+								</div>
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Bonus 2</span>
+									<span class=""><span class="mdi mdi-arrow-up ok"></span>$252</span>
+								</div>
+								<div class="dashboard__row balance__data">
+									<span class="balance__label">Bonus 3</span>
+									<span class=""><span class="mdi mdi-arrow-up ok"></span>$1,002</span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="container__item">
+					<div class="container__header">
+						<div>
+							<h3 class="container__title">Equipe</h3>
+							<span class="container__subtitle">Exibir</span>
+						</div>
+						<span class="info bold">Ver Mais</span>
+					</div>
+					<div class="container__body">
+						<div class="team">
+							<div class="team__member dashboard__row">
+								<div class="dashboard__row">
+									<img src="./assets/img/icon-member.png" alt="Membro do time" class="member__avatar" />
+									<div>
+										<span class="member__username">renatosilva</span>
+										<time class="member__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="member__valor">
+									<span class="mdi mdi-arrow-up ok"></span>
+									<span>$675</span>
+								</span>
+							</div>
+							<div class="team__member dashboard__row">
+								<div class="dashboard__row">
+									<img src="./assets/img/icon-member.png" alt="Membro do time" class="member__avatar" />
+									<div>
+										<span class="member__username">caiqueramos</span>
+										<time class="member__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="member__valor">
+									<span class="mdi mdi-arrow-down danger"></span>
+									<span>$155</span>
+								</span>
+							</div>
+							<div class="team__member dashboard__row">
+								<div class="dashboard__row">
+									<img src="./assets/img/icon-member.png" alt="Membro do time" class="member__avatar" />
+									<div>
+										<span class="member__username">paulosiqueira</span>
+										<time class="member__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="member__valor">
+									<span class="mdi mdi-arrow-up ok"></span>
+									<span>$398</span>
+								</span>
+							</div>
+							<div class="team__member dashboard__row">
+								<div class="dashboard__row">
+									<img src="./assets/img/icon-member.png" alt="Membro do time" class="member__avatar" />
+									<div>
+										<span class="member__username">ricardofreire</span>
+										<time class="member__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="member__valor">
+									<span class="mdi mdi-arrow-up ok"></span>
+									<span>$620</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container__item">
+					<div class="container__header">
+						<div>
+							<h3 class="container__title">Saques recentes</h3>
+							<span class="container__subtitle">Exibir</span>
+						</div>
+						<span class="info bold">Ver Mais</span>
+					</div>
+					<div class="container__body">
+						<div class="withdrawals">
+							<div class="withdraw dashboard__row">
+								<div class="dashboard__row">
+									<span class="withdraw__icon"></span>
+									<div>
+										<span class="">Saque</span>
+										<time class="withdraw__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="withdraw__value">
+									<span class="mdi mdi-arrow-down danger"></span>
+									<span>$1,584</span>
+								</span>
+							</div>
+							<div class="withdraw dashboard__row">
+								<div class="dashboard__row">
+									<span class="withdraw__icon"></span>
+									<div>
+										<span class="">Saque</span>
+										<time class="withdraw__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="withdraw__value">
+									<span class="mdi mdi-arrow-down danger"></span>
+									<span>$1,584</span>
+								</span>
+							</div>
+							<div class="withdraw dashboard__row">
+								<div class="dashboard__row">
+									<span class="withdraw__icon"></span>
+									<div>
+										<span class="">Saque</span>
+										<time class="withdraw__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="withdraw__value">
+									<span class="mdi mdi-arrow-down danger"></span>
+									<span>$1,584</span>
+								</span>
+							</div>
+							<div class="withdraw dashboard__row">
+								<div class="dashboard__row">
+									<span class="withdraw__icon"></span>
+									<div>
+										<span class="">Saque</span>
+										<time class="withdraw__timestamp">22.08.2019@13:20</time>
+									</div>
+								</div>
+								<span class="withdraw__value">
+									<span class="mdi mdi-arrow-down danger"></span>
+									<span>$1,584</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </main>
+	</div>
+	
+	<script src="./assets/js/interface.js"></script>
+</body>
+</html>

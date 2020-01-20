@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Backoffice - Comprar</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/block/form.css">
+	<link rel="stylesheet" href="./assets/css/block/money.css">
+  
+  <link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/aside.css">
+  <link rel="stylesheet" href="./assets/css/interface.css">
+  <link rel="stylesheet" href="./assets/css/block/container.css">
+  <link rel="stylesheet" href="./assets/css/franchises.css">
+  
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+</head>
+<body class="font-main">
+  <header class="header">
+		<div class="show-link">
+			<form class="show-link__form form">
+				<input type="text" class="form__input show-link__input" placeholder="Mostrar meu link...">
+				<span class="mdi mdi-eye-outline show-link__icon show-link__icon--eye"></span>
+			</form>
+			<span class="mdi mdi-file-document-outline show-link__icon--arquivo"></span>
+		</div>
+		
+		<div class="user-content">
+			<span class="user-content__greetings">Olá, <span class="user-content__name">Gustavo Freire</span></span>
+			<span class="user-content__icon mdi mdi-chevron-down"></span>
+			<img src="./assets/img/user.png" alt="Foto do usuário Gustavo Freire" class="user-content__avatar" />
+
+			<div class="user-content__buttons">
+				<span class="user-content__btn mdi mdi-bell user-content__btn--notifications">
+					<span class="user-content__notifications">2</span>
+				</span>
+				<span class="user-content__btn mdi mdi-email"></span>
+				<span class="user-content__btn mdi mdi-dock-window"></span>
+			</div>
+
+			<span class="user-content__btn mdi mdi-menu" onclick="menuToggle()"></span>
+		</div>
+	</header>
+
+	<div class="content">
+		<aside class="aside">
+			<ul class="side-menu ">
+				<li class="side-menu__item">
+          <a href="./dashboard.html">
+            <span class="item__text">Dashboard</span>
+            <span class="item__icon item__icon--home"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./equipe.html">
+            <span class="item__text">Equipe</span>
+            <span class="item__icon item__icon--globe"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./wallet.html">
+            <span class="item__text">Wallet</span>
+            <span class="item__icon item__icon--credit-card"></span>
+          </a>
+			</li>
+				<li class="side-menu__item side-menu__item--selected">
+          <a href="./comprar.html">
+            <span class="item__text">Comprar</span>
+            <span class="item__icon item__icon--emblem"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./bonus.html">
+            <span class="item__text">Bonus</span>
+            <span class="item__icon item__icon--medal"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./minha-conta.html">
+            <span class="item__text">Minha Conta</span>
+            <span class="item__icon item__icon--script"></span>
+          </a>
+			</li>
+			</ul>
+		</aside>
+	
+		<main class="main">
+      <h2 class="main__title bold">comprar</h2>
+
+      <div class="container franchises">
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 1</h3>
+          <img src="./assets/img/franchise-1.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">200</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 2</h3>
+          <img src="./assets/img/franchise-2.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">500</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 3</h3>
+          <img src="./assets/img/franchise-3.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">1,000</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 4</h3>
+          <img src="./assets/img/franchise-4.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">3,000</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 5</h3>
+          <img src="./assets/img/franchise-5.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">5,000</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 6</h3>
+          <img src="./assets/img/franchise-6.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">10,000</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 7</h3>
+          <img src="./assets/img/franchise-7.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">25,000</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 8</h3>
+          <img src="./assets/img/franchise-8.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">50,000</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+        <div class="container__item franchise">
+          <h3 class="container__title franchise__title">Franquia 9</h3>
+          <img src="./assets/img/franchise-9.png" alt="Franquia" class="franchise__image" />
+          <span class="franchise__value money">100,000</span>
+          <div class="franchise__periods">
+            <small class="franchise__period">12 meses - 10%</small>
+            <small class="franchise__period">24 meses - 15%</small>
+          </div>
+          <form class="form franchise__form">
+            <div class="form__custom-select form__custom-select--main">
+              <select class="form__input">
+                <option>Período:</option>
+              </select>
+            </div>
+            <input type="text" class="franchise__quantity form__input" placeholder="Quantidade:"/>
+            <button class="form__btn">Comprar <span class="form__btn__icon mdi mdi-cart-arrow-down"></span></button>
+          </form>
+        </div>
+      </div>  
+    </main>
+  </div>
+
+  <script src="./assets/js/interface.js"></script>
+</body>
+</html>

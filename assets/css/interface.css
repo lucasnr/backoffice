@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.main {
+  background-color: var(--bg);
+  padding: 1em;
+  width: 100%;
+}
+
+.show-menu .main {
+  margin-left: 234px;
+}
+
+@media(max-width: 1400px) {
+  .show-menu .main {
+    filter: blur(1px);
+    margin-left: 0px !important;
+    transition: 300ms linear;
+  }
+}
+
+@media(min-width: 768px) {
+  .main {
+    padding: 2em;
+  }
+}
+
+.main__title {
+  color: var(--menu-alt);
+  font-size: 2em;
+}
+
+.main__title::before {
+  color: var(--main);
+  content: "\F35F";
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

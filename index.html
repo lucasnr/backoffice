@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Backoffice - Login</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <link rel="stylesheet" href="./assets/css/block/form.css">
+
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+</head>
+<body>
+  <main class="login font-main">
+    <div class="login__container">
+      <div class="login__header">
+        <h1 class="login__title">Backoffice</h1>
+        <h2 class="login__subtitle">Faça seu login</h2>
+      </div>
+      <form class="login__form form">
+        <div class="form__group">
+          <input type="text" class="form__input" placeholder="Username ou email..."/>
+        </div>
+        <div class="form__group">
+          <input type="password" class="form__input" placeholder="Senha..."/>
+        </div>
+        <span class="login__forgot-password">Esqueceu sua senha? <a href="#">Clique aqui</a></span>
+        <div class="login__captcha">
+          <!-- place real captcha here -->
+          <img src="./assets/img/captcha.jpg" alt="Replace with real captcha" style="width: 100%;"> 
+        </div>
+        <button class="form__btn form__btn--gradient">Acessar conta <span class="mdi mdi-arrow-right form__btn__icon"></span></button>
+      </form>
+      <div class="login__signup">
+        <span>Ainda não faz parte?</span>
+        <a href="./cadastro.html">Abra a sua conta agora!</a>
+      </div>
+    </div>
+
+    <script src="./assets/js/login.js"></script>
+  </main>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Backoffice - Bonus</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/block/form.css">
+  
+  <link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/aside.css">
+  <link rel="stylesheet" href="./assets/css/interface.css">
+  <link rel="stylesheet" href="./assets/css/block/container.css">
+  <link rel="stylesheet" href="./assets/css/bonus.css">
+  
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+</head>
+<body class="font-main">
+  <header class="header">
+		<div class="show-link">
+			<form class="show-link__form form">
+				<input type="text" class="form__input show-link__input" placeholder="Mostrar meu link...">
+				<span class="mdi mdi-eye-outline show-link__icon show-link__icon--eye"></span>
+			</form>
+			<span class="mdi mdi-file-document-outline show-link__icon--arquivo"></span>
+		</div>
+		
+		<div class="user-content">
+			<span class="user-content__greetings">Olá, <span class="user-content__name">Gustavo Freire</span></span>
+			<span class="user-content__icon mdi mdi-chevron-down"></span>
+			<img src="./assets/img/user.png" alt="Foto do usuário Gustavo Freire" class="user-content__avatar" />
+
+			<div class="user-content__buttons">
+				<span class="user-content__btn mdi mdi-bell user-content__btn--notifications">
+					<span class="user-content__notifications">2</span>
+				</span>
+				<span class="user-content__btn mdi mdi-email"></span>
+				<span class="user-content__btn mdi mdi-dock-window"></span>
+			</div>
+
+			<span class="user-content__btn mdi mdi-menu" onclick="menuToggle()"></span>
+		</div>
+	</header>
+
+	<div class="content">
+		<aside class="aside">
+			<ul class="side-menu ">
+				<li class="side-menu__item">
+          <a href="./dashboard.html">
+            <span class="item__text">Dashboard</span>
+            <span class="item__icon item__icon--home"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./equipe.html">
+            <span class="item__text">Equipe</span>
+            <span class="item__icon item__icon--globe"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./wallet.html">
+            <span class="item__text">Wallet</span>
+            <span class="item__icon item__icon--credit-card"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./comprar.html">
+            <span class="item__text">Comprar</span>
+            <span class="item__icon item__icon--emblem"></span>
+          </a>
+			</li>
+				<li class="side-menu__item side-menu__item--selected">
+          <a href="./bonus.html">
+            <span class="item__text">Bonus</span>
+            <span class="item__icon item__icon--medal"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./minha-conta.html">
+            <span class="item__text">Minha Conta</span>
+            <span class="item__icon item__icon--script"></span>
+          </a>
+			</li>
+			</ul>
+		</aside>
+	
+		<main class="main">
+      <h2 class="main__title bold">bonus</h2>
+
+      <div class="container bonus">
+        <div class="container__item container__item--long">
+          <div class="container__header form">
+            <div>
+              <h3 class="container__title">Geral</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <form class="form">
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Jan.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Dez.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select">
+                <select class="form__input">
+                  <option>Ordenar por:</option>
+                </select>
+              </div>
+              <button class="form__btn form__btn--small">
+                Pesquisar <span class="form__btn__icon mdi mdi-magnify"></span>
+              </button>
+            </form>
+          </div>
+          <div class="container__body">
+            <div class="container__output">
+              <span class="container__output-label">Data</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Valor</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Taxa</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Quantidade de BTC</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Carteira</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Endereço Bitcoin</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Status</span>
+            </div>
+          </div>
+        </div>
+        <div class="container__item container__item--long">
+          <div class="container__header form">
+            <div>
+              <h3 class="container__title">Extrato</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <form class="form">
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Jan.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Dez.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select">
+                <select class="form__input">
+                  <option>Tipo:</option>
+                </select>
+              </div>
+              <button class="form__btn form__btn--small">
+                Pesquisar <span class="form__btn__icon mdi mdi-magnify"></span>
+              </button>
+            </form>
+          </div>
+          <div class="container__body">
+            <div class="container__output">
+              <span class="container__output-label">Data</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Valor</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Taxa</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Quantidade de BTC</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Carteira</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Endereço Bitcoin</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Status</span>
+            </div>
+          </div>
+        </div>
+        <div class="container__item container__item--long">
+          <div class="container__header form">
+            <div>
+              <h3 class="container__title">Pontos</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <form class="form">
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Jan.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Dez.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select">
+                <select class="form__input">
+                  <option>Tipo:</option>
+                </select>
+              </div>
+              <button class="form__btn form__btn--small">
+                Pesquisar <span class="form__btn__icon mdi mdi-magnify"></span>
+              </button>
+            </form>
+          </div>
+          <div class="container__body">
+            <div class="container__output">
+              <span class="container__output-label">Data</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Valor</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Taxa</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Quantidade de BTC</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Carteira</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Endereço Bitcoin</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Status</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./assets/js/interface.js"></script>
+</body>
+</html>

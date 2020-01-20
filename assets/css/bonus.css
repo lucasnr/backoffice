@@ -1,0 +1,33 @@
+.bonus .container__item {
+  max-width: 840px;
+  margin-right: auto;
+}
+
+.bonus .container__body {
+  display: grid;
+  gap: 10px;
+}
+
+.bonus .container__output {
+  margin: 0;
+  padding: 10px;
+}
+
+.bonus .container__header .form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  margin-top: 1em;
+}
+
+@media (min-width: 864px) {
+  .bonus .container__body {
+    display: flex;
+    gap: 0px;
+  }
+  
+  .bonus .container__header .form {
+    grid-template-columns: 1fr 1fr 1.5fr .75fr;
+    margin-top: 0px;
+  }
+}

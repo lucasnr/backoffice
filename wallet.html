@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Backoffice - Wallet</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/block/form.css">
+	<link rel="stylesheet" href="./assets/css/block/money.css">
+  
+  <link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/css/aside.css">
+  <link rel="stylesheet" href="./assets/css/interface.css">
+  <link rel="stylesheet" href="./assets/css/block/container.css">
+	<link rel="stylesheet" href="./assets/css/block/balances.css">
+  <link rel="stylesheet" href="./assets/css/wallet.css">
+  
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+</head>
+<body class="font-main">
+  <header class="header">
+		<div class="show-link">
+			<form class="show-link__form form">
+				<input type="text" class="form__input show-link__input" placeholder="Mostrar meu link...">
+				<span class="mdi mdi-eye-outline show-link__icon show-link__icon--eye"></span>
+			</form>
+			<span class="mdi mdi-file-document-outline show-link__icon--arquivo"></span>
+		</div>
+		
+		<div class="user-content">
+			<span class="user-content__greetings">Olá, <span class="user-content__name">Gustavo Freire</span></span>
+			<span class="user-content__icon mdi mdi-chevron-down"></span>
+			<img src="./assets/img/user.png" alt="Foto do usuário Gustavo Freire" class="user-content__avatar" />
+
+			<div class="user-content__buttons">
+				<span class="user-content__btn mdi mdi-bell user-content__btn--notifications">
+					<span class="user-content__notifications">2</span>
+				</span>
+				<span class="user-content__btn mdi mdi-email"></span>
+				<span class="user-content__btn mdi mdi-dock-window"></span>
+			</div>
+
+			<span class="user-content__btn mdi mdi-menu" onclick="menuToggle()"></span>
+		</div>
+	</header>
+
+	<div class="content">
+		<aside class="aside">
+			<ul class="side-menu ">
+				<li class="side-menu__item">
+          <a href="./dashboard.html">
+            <span class="item__text">Dashboard</span>
+            <span class="item__icon item__icon--home"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./equipe.html">
+            <span class="item__text">Equipe</span>
+            <span class="item__icon item__icon--globe"></span>
+          </a>
+			</li>
+				<li class="side-menu__item side-menu__item--selected">
+          <a href="./wallet.html">
+            <span class="item__text">Wallet</span>
+            <span class="item__icon item__icon--credit-card"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./comprar.html">
+            <span class="item__text">Comprar</span>
+            <span class="item__icon item__icon--emblem"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./bonus.html">
+            <span class="item__text">Bonus</span>
+            <span class="item__icon item__icon--medal"></span>
+          </a>
+			</li>
+				<li class="side-menu__item">
+          <a href="./minha-conta.html">
+            <span class="item__text">Minha Conta</span>
+            <span class="item__icon item__icon--script"></span>
+          </a>
+			</li>
+			</ul>
+		</aside>
+	
+		<main class="main">
+      <h2 class="main__title bold">wallet</span></h2>
+
+      <div class="container wallet">
+        <div class="container__item">
+          <div class="container__header">
+            <div>
+              <h3 class="container__title">Saques</h3>
+              <h4 class="container__subtitle">Exibir Histórico</h4>
+            </div>
+            <form class="form">
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Jan.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Dez.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select">
+                <select class="form__input">
+                  <option>Ordenar por:</option>
+                </select>
+              </div>
+              <button class="form__btn form__btn--small">
+                Buscar <span class="form__btn__icon mdi mdi-magnify"></span>
+              </button>
+            </form>
+          </div>
+          <div class="container__body">
+            <div class="container__output">
+              <span class="container__output-label">Data</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Valor</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Taxa</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Quantidade de BTC</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Carteira</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Endereço Bitcoin</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Status</span>
+            </div>
+          </div>
+        </div>
+        <div class="container__item">
+          <div class="container__header form">
+            <div>
+              <h3 class="container__title">Transações</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <form class="form">
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Jan.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select form__custom-select--date">
+                <select class="form__input">
+                  <option>01.Dez.2019</option>
+                </select>
+              </div>
+              <div class="form__custom-select">
+                <select class="form__input">
+                  <option>Ordenar por:</option>
+                </select>
+              </div>
+              <button class="form__btn form__btn--small">
+                Buscar <span class="form__btn__icon mdi mdi-magnify"></span>
+              </button>
+            </form>
+          </div>
+          <div class="container__body">
+            <div class="container__output">
+              <span class="container__output-label">Data</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Saldo</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Descrição</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Saldo anterior</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Saldo atual</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Tipo</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Valor</span>
+            </div>
+          </div>
+        </div>
+        <div class="container__item transfers">
+          <div class="container__header form">
+            <div>
+              <h3 class="container__title">Transferência</h3>
+              <h4 class="container__subtitle">Transferência entre contas</h4>
+            </div>
+            <div class="form__custom-select">
+              <select class="form__input">
+                <option>Selecione a carteira de envio...</option>
+              </select>
+            </div>
+          </div>
+          <div class="container__body">
+            <div class="transfers__output">
+              <span class="transfers__output-label">Username</span>
+              <span class="transfers__output-value"> </span>
+            </div>
+            <div class="transfers__output">
+              <span class="transfers__output-label">PIN de Segurança</span>
+              <span class="transfers__output-value"> </span>
+            </div>
+            <div class="transfers__output">
+              <span class="transfers__output-label">Valor</span>
+              <span class="transfers__output-value"> </span>
+            </div>
+            <div class="transfers__output">
+              <span class="transfers__output-label">Taxa</span>
+              <span class="transfers__output-value">$0,00</span>
+            </div>
+            <div class="transfers__output">
+              <span class="transfers__output-label">Total</span>
+              <span class="transfers__output-value">$0,00</span>
+            </div>
+          </div>
+          <form class="form">
+            <button class="form__btn form__btn--small form__btn--flat">Transferir<span class="form__btn__icon mdi mdi-chevron-right"></span></button>
+          </form>
+        </div>
+        <div class="container__item balances">
+          <div class="container__header balances__header">
+            <div>
+              <h3 class="container__title">Saldo Disponível</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <div class="balance">
+              <span class="balance__value money">0,00</span>
+              <div class="balance__increase">
+                <span class="balance__increase__icon mdi mdi-arrow-up ok"></span>
+                <span class="balance__increase__value">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="container__header balances__header">
+            <div>
+              <h3 class="container__title">Saldo Rendimentos</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <div class="balance">
+              <span class="balance__value money">0,00</span>
+              <div class="balance__increase">
+                <span class="balance__increase__icon mdi mdi-arrow-up ok"></span>
+                <span class="balance__increase__value">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="container__header balances__header">
+            <div>
+              <h3 class="container__title">Saldo Comissões</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <div class="balance">
+              <span class="balance__value money">0,00</span>
+              <div class="balance__increase">
+                <span class="balance__increase__icon mdi mdi-arrow-up ok"></span>
+                <span class="balance__increase__value">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="container__header balances__header">
+            <div>
+              <h3 class="container__title">Saldo Processando</h3>
+              <h4 class="container__subtitle">Exibir</h4>
+            </div>
+            <div class="balance">
+              <span class="balance__value money">0,00</span>
+              <div class="balance__increase">
+                <span class="balance__increase__icon mdi mdi-arrow-up ok"></span>
+                <span class="balance__increase__value">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="container__body">
+            <h3 class="container__title">BTC/USD</h3>
+            <h4 class="container__subtitle">Cotação atual</h4>
+            <h3 class="container__title money main-color balance__currency">7,290.85</h3>
+          </div>
+        </div>
+        <div class="container__item deposit">
+          <div class="container__header">
+            <div>
+              <h3 class="container__title">Depósito</h3>
+              <h4 class="container__subtitle">Valor em Dólar:</h4>
+            </div>
+          </div>
+          <div class="container__body">
+            <form class="form">
+              <span class="deposit__value money">0,00</span>
+              <button class="form__btn form__btn--small form__btn--flat">Gerar fatura<span class="form__btn__icon mdi mdi-chevron-right"></span></button>
+            </form>
+            <p class="deposit__warning">
+              <strong class="bold main-color">Atenção: </strong> Transfira exatamente a quantidade de bitcoins informado no campo BTC. Se você inserir uma quantidade diferente de bitcoins, o crédito poderá não ser confirmado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./assets/js/interface.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.team .directs .container__output .container__output-value {
+  font-size: 24px;
+  min-width: 120px;
+}
+
+.team .preference .preference__text {
+  display: block;
+  margin: 1em 0;
+}
+
+.team .preference .form__btn {
+  margin-right: auto;
+}
+
+.team .binary .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.team .binary .graph .form {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+  width: 100%;
+}
+
+.team .binary .binary__input-group {
+  position: relative;
+  width: 100%;
+}
+.team .binary .binary__input-group::before {
+  color: #85858585;
+  content: "\F349";
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: 26px;
+  line-height: inherit;
+  position: absolute;
+  right: 0;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.team .binary .binary__input-group .form__input {
+  padding-right: 3em;
+}
+
+@media(min-width: 690px) {
+  .team .binary .form {
+    margin-top: 0;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+  
+  .team .binary .form__btn {
+    margin-right: 10px;
+  }
+  
+  .team .binary .binary__input-group {
+    max-width: 300px;
+  }
+}
+
+@media(min-width: 1050px) {
+  .team {
+    grid-template-columns: 70% 30%;
+  }
+}

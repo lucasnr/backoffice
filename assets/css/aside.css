@@ -1,0 +1,114 @@
+.aside {
+  background-color: #FFFFFF;
+  box-shadow: 2px -1px 10px #CDCDCD;
+  height: 100%;
+  left: -240px;
+  max-width: 240px;
+  min-height: calc(100vh - 56px);
+  padding: 2em 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.show-menu .aside {
+  left: 0;
+  position: fixed;
+}
+
+@media(max-width: 1400px) {
+  .aside {
+    transition: 300ms linear;
+  }
+}
+
+@media(min-width: 1400px) {
+  .aside {
+    position: initial;
+  }
+}
+
+.side-menu {
+  background-color: var(--menu);
+  box-shadow: 1px 1px 15px #DDDDDD;
+  overflow: hidden;
+}
+
+.side-menu .side-menu__item {
+  align-items: center;
+  border-left-width: 4px;
+  border-left-color: transparent;
+  border-style: solid;
+  box-shadow: -8px 1px 10px #DDDDDD;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  position: relative;
+}
+.side-menu .side-menu__item a {
+  align-items: center;
+  color: var(--menu-alt);
+  display: flex;
+  padding: .5em 2em;
+  text-decoration: none;
+  z-index: 10;
+}
+.side-menu .side-menu__item--selected a {
+  color: var(--main);
+}
+.side-menu .side-menu__item a:hover {
+  color: var(--main);
+}
+
+.side-menu .side-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.side-menu .side-menu__item--selected {
+  border-left-color: var(--main);
+}
+.side-menu .side-menu__item--selected::before {
+  color: var(--main);
+  content: "\F35E";
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: 36px;
+  line-height: inherit;
+  position: absolute;
+  right: 0;
+  transform: translateX(40%);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.side-menu .item__text {
+  font-weight: bold;
+  min-width: 130px;
+} 
+
+.side-menu .item__icon {
+  background-position: center;
+  background-size: cover;
+  height: 36px;
+  width: 36px;
+}
+
+.side-menu .item__icon.item__icon--home {
+  background-image: url(../img/icon-home.jpg);
+}
+.side-menu .item__icon.item__icon--globe {
+  background-image: url(../img/icon-globe.jpg);
+}
+.side-menu .item__icon.item__icon--credit-card {
+  background-image: url(../img/icon-credit-card.jpg);
+}
+.side-menu .item__icon.item__icon--emblem {
+  background-image: url(../img/icon-emblem.jpg);
+}
+.side-menu .item__icon.item__icon--medal {
+  background-image: url(../img/icon-medal.jpg);
+}
+.side-menu .item__icon.item__icon--script {
+  background-image: url(../img/icon-script.jpg);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Backoffice - Cadastre-se</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/signup.css">
+  <link rel="stylesheet" href="./assets/css/block/form.css">
+
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+</head>
+<body>
+  <main class="signup font-main">
+    <div class="signup__container">
+      <div class="signup__step signup__step--selected">
+        <div class="signup__header">
+          <h2 class="signup__subtitle">Já sabe o username do seu patrocinador?<br/>Informe abaixo.</h2>
+        </div>
+        <form class="signup__form form">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Username do seu patrocinador..." />
+          </div>
+          <button class="form__btn form__btn--gradient">Prosseguir <span class="mdi mdi-arrow-right form__btn__icon"></span></button>
+        </form>
+      </div>
+      <div class="signup__step">
+        <div class="signup__header">
+          <h1 class="signup__title">Patrocinador:
+            <span class="signup__sponser"><span class="uppercase">(Traderbank)</span> [Equipe - Esquerda]</span>
+          </h1>
+          <h2 class="signup__subtitle">Preencha agora com seus dados</h2>
+        </div>
+        <form class="signup__form form">
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Escolha seu país"/>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Escolha seu username"/>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Insira seu e-mail"/>
+          </div>
+          <div class="form__group">
+            <input type="password" class="form__input" placeholder="Escolha uma senha"/>
+          </div>
+          <div class="form__group">
+            <input type="password" class="form__input" placeholder="Confirme sua senha"/>
+          </div>
+          <div class="form__group form__group--checkbox">
+            <input type="checkbox" id="termos"/>
+            <label for="termos" class="form__label">Eu aceito os <a href="#">Termos e Condições</a></label>
+          </div>
+          <div class="form__group">
+            <div class="signup__captcha">
+              <img src="./assets/img/captcha.jpg" alt="Replace with the real captcha" style="width: 100%;"/>
+            </div>
+          </div>
+          <button class="form__btn form__btn--gradient">Criar conta <span class="mdi mdi-arrow-right form__btn__icon"></span></button>
+        </form>
+      </div>
+      <div class="signup__step">
+        <div class="signup__header">
+          <h1 class="signup__title">Patrocinador:
+            <span class="signup__sponser"><span class="uppercase">(Traderbank)</span> [Equipe - Esquerda]</span>
+          </h1>
+          <h2 class="signup__subtitle">Você receberá um e-mail de confirmação.<br/>Confirme seu acesso pelo e-mail</h2>
+        </div>
+        <form class="signup__form form">
+          <button class="form__btn form__btn--gradient">Confirmar conta <span class="mdi mdi-arrow-right form__btn__icon"></span></button>
+        </form>
+      </div>
+
+      <div class="signup__dots-navigators">
+        <div class="signup__dot-navigator signup__dot-navigator--selected"></div>
+        <div class="signup__dot-navigator"></div>
+        <div class="signup__dot-navigator"></div>
+      </div>
+
+      <span class="signup__has-account">Já tem uma conta? Faça o <a href="./index.html">login</a></span>
+    </div>
+  </main>
+
+  <script src="./assets/js/signup.js">
+  </script>
+</body>
+</html>

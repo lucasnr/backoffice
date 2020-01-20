@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Backoffice - Minha Conta</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/block/form.css">
+
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/aside.css">
+  <link rel="stylesheet" href="./assets/css/interface.css">
+  <link rel="stylesheet" href="./assets/css/block/container.css">
+  <link rel="stylesheet" href="./assets/css/myAccount.css">
+
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.7.95/css/materialdesignicons.min.css">
+</head>
+
+<body class="font-main">
+  <header class="header">
+
+    <div class="show-link">
+      <form class="show-link__form form">
+        <input type="text" class="form__input show-link__input" placeholder="Mostrar meu link...">
+        <span class="mdi mdi-eye-outline show-link__icon show-link__icon--eye"></span>
+      </form>
+      <span class="mdi mdi-file-document-outline show-link__icon--arquivo"></span>
+    </div>
+
+    <div class="user-content">
+      <span class="user-content__greetings">Olá, <span class="user-content__name">Gustavo Freire</span></span>
+      <span class="user-content__icon mdi mdi-chevron-down"></span>
+      <img src="./assets/img/user.png" alt="Foto do usuário Gustavo Freire" class="user-content__avatar" />
+
+      <div class="user-content__buttons">
+        <span class="user-content__btn mdi mdi-bell user-content__btn--notifications">
+          <span class="user-content__notifications">2</span>
+        </span>
+        <span class="user-content__btn mdi mdi-email"></span>
+        <span class="user-content__btn mdi mdi-dock-window"></span>
+      </div>
+
+      <span class="user-content__btn mdi mdi-menu" onclick="menuToggle()"></span>
+    </div>
+  </header>
+
+  <div class="content">
+    <aside class="aside">
+      <ul class="side-menu ">
+        <li class="side-menu__item">
+          <a href="./dashboard.html">
+            <span class="item__text">Dashboard</span>
+            <span class="item__icon item__icon--home"></span>
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a href="./equipe.html">
+            <span class="item__text">Equipe</span>
+            <span class="item__icon item__icon--globe"></span>
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a href="./wallet.html">
+            <span class="item__text">Wallet</span>
+            <span class="item__icon item__icon--credit-card"></span>
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a href="./comprar.html">
+            <span class="item__text">Comprar</span>
+            <span class="item__icon item__icon--emblem"></span>
+          </a>
+        </li>
+        <li class="side-menu__item">
+          <a href="./bonus.html">
+            <span class="item__text">Bonus</span>
+            <span class="item__icon item__icon--medal"></span>
+          </a>
+        </li>
+        <li class="side-menu__item side-menu__item--selected">
+          <a href="./minha-conta.html">
+            <span class="item__text">Minha Conta</span>
+            <span class="item__icon item__icon--script"></span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <h2 class="main__title">minha <span class="bold">conta</span></h2>
+
+      <div class="container my-account">
+        <div class="container__item user__info">
+          <div class="container__header">
+            <h3 class="container__title">Informações</h3>
+          </div>
+          <div class="container__body container__output-group">
+            <div class="container__output">
+              <span class="container__output-label">Nome:</span>
+              <span class="container__output-value">Gustavo</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Sobrenome:</span>
+              <span class="container__output-value">Freire</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Patrocinador:</span>
+              <span class="container__output-value">luisfreire</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Tipo:</span>
+              <span class="container__output-value">User</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Username:</span>
+              <span class="container__output-value">gustavofreire</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Data Cadastro:</span>
+              <span class="container__output-value">26/12/2019</span>
+            </div>
+
+            <div class="container__output container__output--full">
+              <span class="container__output-label">Email:</span>
+              <span class="container__output-value">gustavofreire@gmail.com</span>
+            </div>
+
+            <div class="container__output">
+              <span class="container__output-label">Telefone:</span>
+              <span class="container__output-value">+55</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">País:</span>
+              <span class="container__output-value">Brazil</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Equipe Esquerda:</span>
+              <span class="container__output-value">(Carregar)</span>
+            </div>
+            <div class="container__output">
+              <span class="container__output-label">Equipe Direita:</span>
+              <span class="container__output-value">(Carregar)</span>
+            </div>
+          </div>
+        </div>
+        <div class="container__item password-change">
+          <div class="container__header">
+            <div>
+              <h3 class="container__title">Trocar Senha</h3>
+              <h4 class="container__subtitle">A nova senha deve conter entre 6 a 15 caracteres</h4>
+              <h4 class="container__subtitle">Não utilize números sequencias; ex: 123456.</h4>
+            </div>
+          </div>
+          <div class="container__body">
+            <form class="form form--grid">
+              <input type="text" class="form__input" placeholder="Senha atual:" />
+              <input type="text" class="form__input" placeholder="Nova senha:" />
+              <input type="text" class="form__input" placeholder="Repetir nova senha:" />
+              <button class="form__btn">Salvar<span class="form__btn__icon mdi mdi-content-save"></span></button>
+            </form>
+          </div>
+        </div>
+        <div class="container__item">
+          <div class="container__header">
+            <div>
+              <h3 class="container__title">Pin de Segurança</h3>
+              <h4 class="container__subtitle">Clique para receber um novo PIN de segurança em seu e-mail</h4>
+            </div>
+          </div>
+          <div class="container__body">
+            <form class="form form--grid">
+              <button class="form__btn">Enviar novo PIN de segurança</button>
+            </form>
+          </div>
+        </div>
+        <div class="container__item bitcoin-address">
+          <div class="container__header">
+            <div>
+              <h3 class="container__title">Endereço Bitcoin</h3>
+              <h4 class="container__subtitle">Você não adicionou nenhum endereço Bitcoin ainda</h4>
+            </div>
+          </div>
+          <div class="container__body">
+            <div class="bitcoin-address__qrcode">
+              <img src="./assets/img/qrcode.png" alt="Place real qrcode here" />
+            </div>
+            <form class="form form--grid">
+              <button class="form__btn">Adicionar novo endereço<span
+                  class="form__btn__icon mdi mdi-plus"></span></button>
+            </form>
+          </div>
+        </div>
+        <div class="container__item link">
+          <div class="container__header">
+            <div>
+              <h3 class="container__title">Link de Indicação</h3>
+              <h4 class="container__subtitle">Utilize o link abaixo para indicar novos membros</h4>
+            </div>
+          </div>
+          <div class="container__body">
+            <form class="form">
+              <a href="#" class="form__input">https://dash.traderbankbit.com/cadastro/ref/gustavofreire</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./assets/js/interface.js"></script>
+</body>
+
+</html>

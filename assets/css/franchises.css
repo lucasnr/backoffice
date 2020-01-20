@@ -1,0 +1,56 @@
+.franchises {
+  display: flex;
+  flex-flow: wrap row;
+  max-width: none;
+}
+
+.franchises .franchise {
+  display: grid;
+  gap: 10px;
+  margin: 0px 1em 1em 0px;
+  max-width: 240px;
+  padding: 1em !important;
+  text-align: center;
+}
+
+.franchises .franchise .franchise__title {
+  text-align: center;
+}
+
+.franchises .franchise .franchise__image {
+  display: block;
+  margin: 0px auto;
+  width: 100px;
+}
+
+.franchises .franchise .franchise__value {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.franchises .franchise .franchise__form {
+  display: grid;
+  gap: 10px;
+  margin: 0px auto;
+  width: 85%;
+}
+
+.franchises .franchise .franchise__periods {
+  display: grid;
+  font-size: 12px;
+  gap: 2px;
+  margin: 5px 0px;
+}
+
+@media(max-width: 592px) {
+  .franchises .franchise {
+    max-width: none !important;
+  }
+}
+
+@media(max-width: 864px) {
+  .franchises .franchise {
+    max-width: 245px;
+    margin: .5em;
+  }
+}

@@ -1,0 +1,125 @@
+.header {
+  background-color: var(--main);
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+
+.header .header__logo {
+  background-image: url(../img/favicon.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 8px;
+  width: 40px;
+}
+
+@media(min-width: 864px) {
+  .header {
+    justify-content: space-around;
+  }
+}
+
+.show-link {
+  align-items: center;
+  display: none;
+  max-width: 300px;
+  width: 100%;
+}
+
+@media(min-width: 864px) {
+  .show-link {
+    display: flex;
+  }
+}
+
+.show-link .show-link__form {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.show-link .show-link__input {
+  padding: .55em 3em .55em 2em;
+}
+
+.show-link .show-link__icon {
+  font-size: 20px;
+}
+
+.show-link .show-link__icon--eye {
+  bottom: 0;
+  color: #888;
+  position: absolute;
+  right: 0;
+  transform: translate(-65%, -.25em);
+}
+
+.show-link .show-link__icon--arquivo {
+  color: var(--main-alt);
+  margin-left: 5px;
+}
+
+.user-content {
+  align-items: center;
+  color: var(--main-alt);
+  display: flex;
+}
+
+.user-content .user-content__greetings {
+  font-style: italic;
+}
+
+.user-content .user-content__name {
+  display: none;
+  font-weight: bold;
+}
+
+@media(min-width: 452px) {
+  .user-content .user-content__name {
+    display: inline;
+  }
+}
+
+.user-content .user-content__icon {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.user-content .user-content__avatar {
+  border-radius: 9999px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  width: 40px;
+}
+
+.user-content .user-content__buttons {
+  margin: 0 20px;
+}
+
+.user-content .user-content__btn {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 8px;
+}
+
+.user-content .user-content__btn--notifications {
+  position: relative;
+}
+
+.user-content .user-content__notifications {
+  align-items: center;
+  background-color: var(--notification);
+  border-radius: 9999px;
+  color: var(--main-alt);
+  display: flex;
+  font-size: 10px;
+  height: 14px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 14px;
+}

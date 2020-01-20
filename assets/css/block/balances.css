@@ -1,0 +1,33 @@
+.balances .balances__header {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.balances .balance {
+  border-bottom: 2px dotted var(--alternative);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.balances .balance__value {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.balances .balance .balance__increase__icon {
+  font-size: 22px;
+}
+
+.balances .balance .balance__increase__value {
+  background-color: var(--ok);
+  border-radius: 9999px;
+  color: #FFF;
+  padding: 6px 24px;
+}
+
+.balances .interface-container__body .money {
+  margin-top: 10px;
+}

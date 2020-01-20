@@ -1,0 +1,78 @@
+.login {
+  --color: #FFF;
+  align-items: center;
+  background-image: url(../img/login-background.jpeg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 0px 16px;
+}
+
+.login .login__container {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+}
+
+.login .login__header {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.login .login__title {
+  color: var(--color);
+  font-size: 26px;
+}
+
+.login .login__subtitle {
+  font-size: 14px;
+  margin-right: 16px;
+  position: relative;
+}
+
+.login .login__subtitle::before {
+  color: var(--main);
+  content: "\F35F";
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.login .login__forgot-password {
+  display: block;
+  text-align: center;
+  margin: 16px 0px;
+}
+.login .login__forgot-password a {
+  color: inherit;
+}
+.login .login__forgot-password a:hover,
+.login .login__forgot-password a:focus {
+  color: rgba(255, 255, 255, .5625);
+}
+
+.login .login__captcha {
+  margin-bottom: 1.5em;
+}
+
+.login .login__signup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login .login__signup a {
+  color: var(--main);
+}
+
+.login .form__input {
+  box-shadow: -2px 2px 7px rgba(0, 0, 0, .5) !important;
+}
