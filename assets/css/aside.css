@@ -112,3 +112,16 @@
 .side-menu .item__icon.item__icon--script {
   background-image: url(../img/icon-script.jpg);
 }
+
+.side-menu .side-menu__item .side-menu__sublink {
+  display: none;
+  font-size: 14px;
+}
+
+.side-menu .side-menu__item.side-menu__item--sublinks {
+  display: grid;
+}
+
+.show-sublinks .side-menu .side-menu__item .side-menu__sublink {
+  display: block;
+}

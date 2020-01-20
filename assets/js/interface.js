@@ -32,3 +32,7 @@ function menuToggle() {
 		main.onclick = () => menuToggle();
 	}
 }
+
+function sublinksToggle() {
+	content.classList.toggle('show-sublinks');
+}
