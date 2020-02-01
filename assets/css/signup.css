@@ -1,16 +1,26 @@
 .signup {
   --color: #FFF;
   align-items: center;
-  background-image: url(../img/signup-background.jpg);
+  background-image: url(../img/fundo-tela-cadastro.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--color);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   height: 100%;
-  overflow: hidden;
-  padding: 0px 16px;
+  overflow-x: hidden;
+  padding: 16px;
+}
+
+.signup .signup__logo {
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+  margin: 0px auto 2.5em auto;
+  width: 276px;
 }
 
 .signup .signup__container {
