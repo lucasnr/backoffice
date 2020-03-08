@@ -1,14 +1,14 @@
 :root {
- --main: #F35324;
- --main-alt: #FFFFFF;
- --alternative: #858585;
- --notification: #F9B32F;
- --menu: #F3F3F3;
- --menu-alt: #B9BDC6;
- --bg: #F6F7FB;
- --ok: #30CDA2;
- --danger: #A5525C;
- --info: #6298f0;
+  --main: #f35324;
+  --main-alt: #ffffff;
+  --alternative: #858585;
+  --notification: #f9b32f;
+  --menu: #f3f3f3;
+  --menu-alt: #b9bdc6;
+  --bg: #f6f7fb;
+  --ok: #30cda2;
+  --danger: #a5525c;
+  --info: #6298f0;
 }
 
 * {
@@ -16,7 +16,8 @@
   outline: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -32,19 +33,19 @@ html, body {
 }
 
 .main-color {
-  color: var(--main);
+  color: var(--main) !important;
 }
 
 .ok-color {
-  color: var(--ok);
+  color: var(--ok) !important;
 }
 
 .danger-color {
-  color: var(--danger);
+  color: var(--danger) !important;
 }
 
 .info-color {
-  color: var(--info);
+  color: var(--info) !important;
 }
 
 @font-face {

@@ -15,35 +15,58 @@
   padding: 10px;
 }
 
-.wallet .transfers .form {
-  justify-content: flex-start;
+.wallet .custom-table-container {
+  overflow-x: scroll;
+  width: 100%;
 }
 
-.wallet .transfers .transfers__output {
+.wallet .custom-table {
+  border-collapse: collapse;
+  font-size: 0.875em;
+  width: 100%;
+}
+
+.wallet .custom-table thead th {
   background-color: var(--bg);
-  display: inline-flex;
-  font-weight: bold;
-  flex-direction: column;
-  min-width: 100px;
-}
-.wallet .transfers .transfers__output:last-child {
-  flex: 1;
-  min-width: none;
-}
-
-.wallet .transfers .transfers__output .transfers__output-label {
   border-left: 3px solid var(--main);
-  color: rgba(0, 0, 0, .375);
-  font-size: 12px;
-  padding: 10px;
+  padding: 0.675em;
+  text-align: left;
+  white-space: nowrap;
 }
 
-.wallet .transfers .transfers__output .transfers__output-value {
-  background-color: var(--main-alt);
-  border-radius: 8px;
-  margin: 5px;
-  min-height: 36px;
-  padding: 10px;
+.wallet .custom-table tbody tr:nth-child(even) {
+  background-color: var(--bg);
+}
+
+.wallet .custom-table tbody tr,
+.wallet .custom-table tbody td {
+  border: 1px solid #bbb;
+  color: #444;
+  padding: 0.675em;
+}
+
+.wallet .custom-table tbody td {
+  white-space: nowrap;
+}
+
+.wallet .custom-table tbody td:last-child {
+  font-weight: bold;
+}
+
+.wallet .navigators .navigators__nav {
+  display: flex;
+  color: #444;
+}
+
+.wallet .navigators .navigators__nav .navigators__nav__item {
+  cursor: pointer;
+  padding: 0.25em;
+  margin: 0px 2px;
+}
+
+.wallet .navigators .navigators__nav .navigators__nav__item--active {
+  color: var(--notification);
+  border-bottom: 3px solid var(--notification);
 }
 
 .wallet .deposit .deposit__value {
@@ -57,84 +80,46 @@
 }
 
 .wallet .deposit .deposit__warning {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.5;
-  margin-top: 1em;
+}
+
+.wallet .deposit .form__btn {
+  margin: 0px auto 0px 0px;
 }
 
 .wallet .balances .balance__currency {
   margin-top: 10px;
 }
 
+.md-min {
+  display: none;
+}
 
-@media(min-width: 632px) {
-  .wallet {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .wallet .container__item {
-    grid-column: 1 / 3;
-  }
-  
-  .wallet .container__item:nth-child(4) {
-    grid-column: 1 / 2;
-  }
-  
-  .wallet .container__item:nth-child(5) {
-    grid-column: 2 / 3;
-    margin-bottom: auto;
-  }
-
-  .wallet .container__item:nth-child(4) .container__body,
-  .wallet .container__item:nth-child(5) .container__body {
-    flex-direction: column;
+@media (min-width: 768px) {
+  .md-min {
+    display: inline;
   }
 }
 
-@media(min-width: 812px) {
-  .wallet .container__body {
-    display: flex;
-    gap: 0px;
-  }
-}
-
-@media(min-width: 864px) {
-
-  .wallet .transfers .form__custom-select {
-    max-width: 270px;
-    margin-left: 1em;
-    width: 100%;
-  }
-
+@media (min-width: 864px) {
   .wallet .container__header .form {
-    grid-template-columns: 1fr 1fr 1.5fr .75fr;
+    grid-template-columns: 1fr 1fr 1.5fr 0.75fr;
     margin-top: 0px;
   }
 }
 
-@media(min-width: 1050px) {
+@media (min-width: 1050px) {
   .wallet {
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 70% 30%;
   }
 
   .wallet .container__item:nth-child(1) {
-    grid-row: 1 / 2;
-  }
-  .wallet .container__item:nth-child(2) {
-    grid-row: 2 / 3;
-  }
-  .wallet .container__item:nth-child(3) {
-    grid-row: 3 / 4;
-  }
-
-  .wallet .container__item:nth-child(1),
-  .wallet .container__item:nth-child(2),
-  .wallet .container__item:nth-child(3) {
     grid-column: 1 / 2;
+    grid-row: 1 / 3;
   }
 
-  .wallet .container__item:nth-child(4) {
-    grid-row: 1 / 3;
-    grid-column: 2 / 2;
+  .wallet .container__item:nth-child(3) {
+    grid-column: 2 / 3;
   }
 }
