@@ -23,7 +23,7 @@
 .wallet .custom-table {
   border-collapse: collapse;
   font-size: 0.875em;
-  width: 100%;
+  width: calc(100% - 1px);
 }
 
 .wallet .custom-table thead th {
@@ -112,6 +112,10 @@
 @media (min-width: 1050px) {
   .wallet {
     grid-template-columns: 70% 30%;
+  }
+
+  .wallet--full {
+    grid-template-columns: none;
   }
 
   .wallet .container__item:nth-child(1) {
