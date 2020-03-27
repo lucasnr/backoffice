@@ -1,6 +1,7 @@
 .wallet .container__header .form {
   display: grid;
   gap: 10px;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
   margin-top: 1em;
 }
@@ -8,6 +9,7 @@
 .wallet .container__body {
   display: grid;
   gap: 10px;
+  grid-gap: 10px;
 }
 
 .wallet .container__output {

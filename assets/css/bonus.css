@@ -6,6 +6,7 @@
 .bonus .container__body {
   display: grid;
   gap: 10px;
+  grid-gap: 10px;
 }
 
 .bonus .container__output {
@@ -16,6 +17,7 @@
 .bonus .container__header .form {
   display: grid;
   gap: 10px;
+  grid-gap: 10px;
   grid-template-columns: 1fr;
   margin-top: 1em;
 }
@@ -24,10 +26,11 @@
   .bonus .container__body {
     display: flex;
     gap: 0px;
+    grid-gap: 0px;
   }
-  
+
   .bonus .container__header .form {
-    grid-template-columns: 1fr 1fr 1.5fr .75fr;
+    grid-template-columns: 1fr 1fr 1.5fr 0.75fr;
     margin-top: 0px;
   }
 }

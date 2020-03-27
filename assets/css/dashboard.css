@@ -7,6 +7,7 @@
 .dashboard .container__header .form {
   display: grid;
   gap: 12px;
+  grid-gap: 12px;
   grid-template-columns: 1fr;
   margin-top: 1em;
 }
@@ -33,14 +34,14 @@
 .dashboard .balance .balance__increase__value {
   background-color: var(--ok);
   border-radius: 20px;
-  color: #FFFFFF;
-  padding: .5em .75em;
+  color: #ffffff;
+  padding: 0.5em 0.75em;
 }
 
 .dashboard .balance .balance__datatable {
   font-weight: bold;
   display: grid;
-  grid-gap: .5em;
+  grid-gap: 0.5em;
   margin-top: 1em;
 }
 
@@ -54,8 +55,8 @@
 }
 
 .dashboard .balance .balance__data {
-  border-bottom: 1px solid #CCC;
-  padding-bottom: .5em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5em;
 }
 
 .dashboard .team,
@@ -65,7 +66,7 @@
 
 .dashboard .team .team__member,
 .dashboard .withdrawals .withdraw {
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
   padding: 1em 0;
 }
 
@@ -104,8 +105,7 @@
   width: 25px;
 }
 
-
-@media(min-width: 644px) {
+@media (min-width: 644px) {
   .dashboard {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -116,14 +116,14 @@
   }
 }
 
-@media(min-width: 864px) {
+@media (min-width: 864px) {
   .dashboard .container__header .form {
     grid-template-columns: 1fr 1fr 2fr;
     margin-top: 0px;
   }
 }
 
-@media(min-width: 1050px) {
+@media (min-width: 1050px) {
   .dashboard {
     grid-template-columns: repeat(3, 1fr);
   }

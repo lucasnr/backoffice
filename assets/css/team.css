@@ -16,6 +16,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  grid-gap: 10px;
   margin-top: 15px;
 }
 
@@ -32,9 +33,9 @@
 }
 .team .binary .binary__input-group::before {
   color: #85858585;
-  content: "\F349";
+  content: '\F349';
   display: inline-block;
-  font: normal normal normal 24px/1 "Material Design Icons";
+  font: normal normal normal 24px/1 'Material Design Icons';
   font-size: 26px;
   line-height: inherit;
   position: absolute;
@@ -49,7 +50,7 @@
   padding-right: 3em;
 }
 
-@media(min-width: 690px) {
+@media (min-width: 690px) {
   .team .binary .form {
     margin-top: 0;
     margin-left: 15px;
@@ -58,17 +59,17 @@
     justify-content: flex-end;
     flex: 1;
   }
-  
+
   .team .binary .form__btn {
     margin-right: 10px;
   }
-  
+
   .team .binary .binary__input-group {
     max-width: 300px;
   }
 }
 
-@media(min-width: 1050px) {
+@media (min-width: 1050px) {
   .team {
     grid-template-columns: 70% 30%;
   }
